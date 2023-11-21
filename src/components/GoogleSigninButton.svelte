@@ -2,7 +2,7 @@
 	import { account } from '$lib/appwrite';
 
 	function login() {
-		account.createOAuth2Session('google', 'http://localhost:5173');
+		account.createOAuth2Session('google', window.location.href);
 	}
 </script>
 
